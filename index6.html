@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Vitality - Design Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global6.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 65px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .arrow-down:hover {
+  transform: scale(1.1);
+}
+
+/* 下拉菜单样式 */
+.nav-projects {
+  position: relative;
+}
+
+.nav-projects .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-projects .dropdown a {
+  display: block !important;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  gap: 0 !important;
+}
+
+.nav-projects .dropdown a:hover {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+@media (max-width: 480px) {
+  .main-nav {
+    gap: 20px;
+  }
+  .main-nav a {
+    font-size: 16px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  padding-top: 45px;
+  padding-bottom: 85px;
+}
+.video-placeholder {
+  position: relative;
+  margin-bottom: 47px;
+}
+.hero-banner {
+  border-radius: 40px;
+  width: 100%;
+}
+.play-button {
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.play-button:hover {
+  transform: scale(1.1);
+}
+.hero-text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+.hero-text p:first-child {
+  margin-bottom: 30px;
+  color: var(--text-primary);
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .hero-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/* CSS for section section:design-scheme */
+.design-scheme-section {
+  padding-bottom: 85px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 49px;
+}
+.gallery-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for section section:manual-sheet */
+.manual-sheet-section {
+  padding-bottom: 85px;
+}
+.manual-content {
+  position: relative;
+}
+.manual-image {
+  width: 100%;
+}
+.manual-text-box {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 232px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.03%);
+  border-radius: 30px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  font-size: 10px;
+  line-height: 15px;
+  text-align: justify;
+  color: var(--text-secondary);
+}
+.manual-text-box p:first-child {
+  margin-bottom: 22px;
+  color: var(--text-secondary);
+}
+.manual-text-box b {
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .manual-text-box {
+    right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .manual-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .manual-text-box {
+    position: static;
+    width: auto;
+    margin-top: 20px;
+    order: -1;
+  }
+}
+
+/* CSS for section section:illustrated-guide */
+.illustrated-guide-section {
+  padding-bottom: 85px;
+}
+.guide-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.guide-layout > img {
+  flex-shrink: 0;
+  width: 256px;
+}
+.guide-text-box {
+  flex-grow: 1;
+  padding: 38px 33px;
+  box-sizing: border-box;
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.03%);
+  border-radius: 17px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 10px;
+  line-height: 15px;
+  text-align: justify;
+  color: var(--text-secondary);
+}
+.guide-text-box p:first-child {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1200px) {
+  .guide-layout {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .guide-text-box {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* CSS for section section:low-fi-prototype */
+.low-fi-section {
+  padding-bottom: 85px;
+}
+.low-fi-layout {
+  display: flex;
+  gap: 73px;
+  align-items: flex-start;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.low-fi-left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
+  align-items: flex-start;
+}
+.low-fi-left-col img {
+  width: 500px !important;
+  min-width: 500px !important;
+  max-width: 500px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 12px;
+  flex-shrink: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
+}
+.low-fi-right-col {
+  width: 489px;
+  align-self: flex-start;
+}
+.low-fi-right-col img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
+}
+@media (max-width: 1024px) {
+  .low-fi-layout {
+    flex-direction: column;
+    gap: 24px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .low-fi-left-col {
+    align-items: stretch;
+  }
+  .low-fi-left-col img {
+    width: 500px !important;
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .low-fi-right-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .low-fi-layout {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 图片放大功能样式 */
+.gallery-grid img, .low-fi-left-col img, .low-fi-right-col img, .guide-layout img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover, .low-fi-left-col img:hover, .low-fi-right-col img:hover, .guide-layout img:hover {
+  transform: scale(1.05);
+}
+
+/* 模态框样式 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+  <script src="global6.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 图片放大功能
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('caption');
+      const closeBtn = document.getElementsByClassName('close')[0];
+      
+      // 为所有图片添加点击事件
+      const allImages = document.querySelectorAll('.gallery-grid img, .low-fi-left-col img, .low-fi-right-col img, .guide-layout img');
+      allImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+          modal.classList.add('show');
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        });
+      });
+      
+      // 点击关闭按钮关闭模态框
+      closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+      });
+      
+      // 点击模态框背景关闭模态框
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+      
+      // 按ESC键关闭模态框
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+  </script>
+</head>  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navProjects = document.querySelector('.nav-projects');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (navProjects && dropdown) {
+        // 悬停效果
+        navProjects.addEventListener('mouseenter', function() {
+          dropdown.style.display = 'flex';
+        });
+        
+        navProjects.addEventListener('mouseleave', function() {
+          dropdown.style.display = 'none';
+        });
+        
+        // 保留点击效果作为备用
+        navProjects.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!navProjects.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <nav class="main-nav">
+      <a href="index.html">主页 | Home</a>
+      <div class="nav-projects">
+        <a href="#projects"><strong>作品 | Project</strong> <span class="arrow-down"></span></a>
+        <div class="dropdown">
+          <a href="index2.html">VIVID SYDNEY</a>
+          <a href="index3.html">MAP MIMA</a>
+          <a href="index4.html">光速咖啡</a>
+          <a href="index5.html">南阳光屿</a>
+          <a href="index6.html">LUCKY VITALITY</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="page-wrapper">
+  <img src="images6/2035_527.svg" alt="background decoration" class="background-svg" aria-hidden="true">
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="video-placeholder">
+        <video src="images6/lucky.mp4" alt="Lucky Vitality product presentation" class="hero-banner" controls autoplay muted loop></video>
+      </div>
+      <div class="hero-text">
+        <p>该项目是设计一个虚构原型：如果在未来的日常生活中保健品以“盲盒”形式销售会怎样？在不久的将来，BLND.lab已发展成为全球领先的盲盒文化品牌，产品线涵盖玩具、美妆、食品、时尚和家居用品。其最受关注的创新产品之一是Lucky Vitality——一个将自我护理重新定义为机会游戏的盲盒健康系列。这些时尚未来主义的扭蛋机被精心布置在各大城市最繁忙的街角和交通枢纽。</p>
+        <p class="english-text">The project was to design a fictional prototype: what would happen if health products were sold in the form of “blind boxes” in our daily lives in the future? In the near future, BLND.lab has grown into a leading global brand in blind box culture, with product lines spanning toys, beauty, food, fashion, and home goods. One of its most talked-about innovations is Lucky Vitality, a blind box health series that redefines self-care as a game of chance.These sleek, futuristic gacha machines are strategically placed at the busiest street corners and transit hubs across major cities.</p>
+      </div>
+    </div>
+  </section>
+<section id="design-scheme" class="design-scheme-section">
+  <div class="container">
+    <h2 class="section-title">设计方案 | <span>Design Scheme</span></h2>
+    <hr class="section-divider">
+    <div class="gallery-grid">
+      <img src="images6/e999862116ad43e813bcbc43525655cb14893eaf.png" alt="Design scheme 1">
+      <img src="images6/3ad98a7b64a488227147d44657350f23818bb6d4.png" alt="Design scheme 2">
+      <img src="images6/98759f925aa7b4f07166c9e1ddb01e7d48ee2e89.png" alt="Design scheme 3">
+      <img src="images6/815d1f7584b0c8dddb2e4d21bcc386ab6dbb4d3c.png" alt="Design scheme 4">
+      <img src="images6/a7259faf13a88db0f64e56b0045c85564f52431f.png" alt="Design scheme 5">
+      <img src="images6/95bd6f6d414b509f31a603485cee69d49d5978d0.png" alt="Design scheme 6">
+      <img src="images6/8df1e014b234ea9e2ca840e6cb309d28c965e1be.png" alt="Design scheme 7">
+      <img src="images6/43a61b04f33c55fe403201d6f72411894087ea47.png" alt="Design scheme 8">
+      <img src="images6/4917bf782fceadca67c63acb24349e4eb6bf9856.png" alt="Design scheme 9">
+      <img src="images6/f4181c76003f6b7a06cdd9606ee9c934eff7c8e1.png" alt="Design scheme 10">
+      <img src="images6/e0dd598bf215e5b45e721c0435baebd5a771140c.png" alt="Design scheme 11">
+      <img src="images6/9c674f5a25f36d03579c0435006363a297acf3ec.png" alt="Design scheme 12">
+      <img src="images6/afb9bcb0160d82792091d1366ead2ad7ae7904ce.png" alt="Design scheme 13">
+      <img src="images6/1b20de17423ea84344e213a86e546c6a88f334ec.png" alt="Design scheme 14">
+      <img src="images6/8582748447e2134423d07161eab8919c6f29ce76.png" alt="Design scheme 15">
+      <img src="images6/40cfede714d181ef9ec06655168d90e34c7d75d5.png" alt="Design scheme 16">
+      <img src="images6/b2260290d4bee8b7eb1c74a07f50a846299dfbab.png" alt="Design scheme 17">
+      <img src="images6/1cfa5601508c437ac9183b43a96a55ba8b3aa20e.png" alt="Design scheme 18">
+    </div>
+  </div>
+</section>
+<section id="manual-sheet" class="manual-sheet-section">
+  <div class="container">
+    <h2 class="section-title">手册 | <span>Manual Sheet</span></h2>
+    <hr class="section-divider">
+    <div class="manual-content">
+      <img src="images6/18354736a3a19711723703e449f9cfaa7ffc479c.png" alt="Manual Sheet brochure" class="manual-image">
+      <div class="manual-text-box">
+        <p>当用户在线购买幸运活力产品时，他们将收到这本小册子，其中介绍了当前季度的所有类别以及下一季度即将推出的产品。</p>
+        <p class="english-text">When users purchase lucky vitality online, they will receive this <b>Manual Sheet</b>, which introduces all the categories of the current season and the products to be launched in the next quarter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="illustrated-guide" class="illustrated-guide-section">
+  <div class="container">
+    <h2 class="section-title">图解指南 | <span>Illustrated Guide</span></h2>
+    <hr class="section-divider">
+    <div class="guide-layout">
+      <img src="images6/a979ad6327e8ad2b3d5c5a9b5dfc8ae2b516d47c.png" alt="Illustrated guide product 1">
+      <img src="images6/2241f0249d798e527222b0c877cc56fcad817c49.png" alt="Illustrated guide product 2">
+      <img src="images6/92f98c769d86fe4fa5bab6903893d7de6b52ac03.png" alt="Illustrated guide product 3">
+      <div class="guide-text-box">
+        <p>产品罐子外包装设计过程中我运用AIGC辅助设计，生成符合主题的个性化插画设计，同时确保同一主题下不同产品设计的一致性。</p>
+        <p class="english-text">During the design process of the product can packaging, I used AIGC to assist in designing, generating personalized illustrations that matched the theme while ensuring consistency in the designs of different products under the same theme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="low-fi-prototype" class="low-fi-section">
+  <div class="container">
+    <h2 class="section-title">低保真原型 & 建模 | <span>Low-fi prototype & Modeling</span></h2>
+    <hr class="section-divider">
+    <div class="low-fi-layout">
+      <div class="low-fi-left-col">
+        <img src="images6/9292684c17b45903a6351ede8e09919177326c59.png" alt="Low-fi prototype and modeling 1">
+        <img src="images6/5bee56fa7f8bc003b59b5b55a90f162a8d0ec710.png" alt="Low-fi prototype and modeling 2">
+      </div>
+      <div class="low-fi-right-col">
+        <img src="images6/845fc33c7c9c075ab5375d3037730115a1dc44de.png" alt="Low-fi prototype and modeling 3">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- 图片放大模态框 -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-container">
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+
+</body>
+</html>
