@@ -422,6 +422,10 @@
         
         // 保留点击效果作为备用
         navProjects.addEventListener('click', function(e) {
+        // 只有点击的是主链接（不是下拉菜单中的链接）时才阻止默认行为
+          if (e.target.closest('.dropdown')) {
+            return; // 如果点击的是下拉菜单中的链接，不阻止默认行为
+          }  
           e.preventDefault();
           dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
         });
