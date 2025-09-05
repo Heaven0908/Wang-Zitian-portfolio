@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>光速咖啡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global4.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 65px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .arrow-down:hover {
+  transform: scale(1.1);
+}
+
+/* 下拉菜单样式 */
+.nav-projects {
+  position: relative;
+}
+
+.nav-projects .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-projects .dropdown a {
+  display: block !important;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  gap: 0 !important;
+}
+
+.nav-projects .dropdown a:hover {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+/* CSS for section section:hero */
+#hero {
+  padding-top: 87px;
+  padding-bottom: 35px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.14;
+  margin: 0 0 54px 0;
+  background: linear-gradient(90deg, #b4bbc8 0%, #2564e1 19.86%, #140c0d 39.73%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-description-cn {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #000000;
+  margin: 0 0 24px 0;
+}
+
+.hero-description-en {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #555555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 64px;
+    margin-bottom: 30px;
+  }
+  .hero-description-cn, .hero-description-en {
+    font-size: 16px;
+  }
+}
+
+/* CSS for section section:design-process */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 46px;
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for section section:logo-vi */
+#logo-vi {
+  padding-top: 66px;
+}
+@media (max-width: 768px) {
+  #logo-vi {
+    padding-top: 40px;
+  }
+}
+
+/* CSS for section section:derived-materials */
+#derived-materials {
+  padding-top: 81px;
+}
+
+.materials-gallery > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.materials-row-1 {
+  gap: 46px;
+  margin-bottom: 52px;
+}
+.materials-row-2 {
+  gap: 57px;
+  margin-bottom: 52px;
+}
+.materials-row-3 {
+  gap: 46px;
+}
+
+.merged-image-container {
+  position: relative;
+  width: 343px;
+  height: 193px;
+}
+.merged-image-container img {
+  position: absolute;
+  top: 0;
+}
+.merged-image-container .merged-img-1 { left: 0; width: 207px; height: 193px; }
+.merged-image-container .merged-img-2 { width: 170px; height: 193px; }
+.merged-image-container .merged-img-3 { left: 0; width: 190px; height: 193px; }
+.merged-image-container .merged-img-4 { width: 163px; height: 193px; }
+
+@media (max-width: 768px) {
+  #derived-materials {
+    padding-top: 40px;
+  }
+  .materials-gallery > div {
+    gap: 20px;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* CSS for section section:on-site-implementation */
+#on-site-implementation {
+  padding-top: 83px;
+  padding-bottom: 120px;
+}
+
+.on-site-layout {
+  display: flex;
+  gap: 73px;
+}
+
+.on-site-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.on-site-right-col {
+  flex: 0 0 489px;
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .on-site-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .on-site-right-col {
+    flex: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #on-site-implementation {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+/* 三张图片一行显示样式 */
+.three-images-row {
+  display: flex;
+  width: 100%;
+  gap: 46px;
+  align-items: flex-start;
+}
+
+.three-images-row img {
+  width: 500px;
+  height: 193px;
+  object-fit: cover;
+}
+
+/* 图片放大功能样式 */
+.gallery-grid img, .gallery-grid-original img, .on-site-layout img, .three-images-row img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.on-site-layout img {
+  border: 3px solid white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.gallery-grid img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* 新的类别：保持原始长宽比例 */
+.gallery-grid-original {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 46px;
+}
+
+.gallery-grid-original img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid-original img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid-original {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid-original {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-grid img:hover, .gallery-grid-original img:hover, .on-site-layout img:hover, .three-images-row img:hover {
+  transform: scale(1.05);
+}
+
+/* 模态框样式 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+  <script src="global4.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navProjects = document.querySelector('.nav-projects');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (navProjects && dropdown) {
+        // 悬停效果
+        navProjects.addEventListener('mouseenter', function() {
+          dropdown.style.display = 'flex';
+        });
+        
+        navProjects.addEventListener('mouseleave', function() {
+          dropdown.style.display = 'none';
+        });
+        
+        // 保留点击效果作为备用
+        navProjects.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!navProjects.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+      
+      // 图片放大功能
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('caption');
+      const closeBtn = document.getElementsByClassName('close')[0];
+      
+      // 为所有图片添加点击事件
+       const allImages = document.querySelectorAll('.gallery-grid img, .gallery-grid-original img, .on-site-layout img, .three-images-row img');
+      allImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+          modal.classList.add('show');
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        });
+      });
+      
+      // 点击关闭按钮关闭模态框
+      closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+      });
+      
+      // 点击模态框背景关闭模态框
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+      
+      // 按ESC键关闭模态框
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <nav class="main-nav">
+      <a href="/Users/wangzitian/Desktop/网站/主页/index.html">主页 | Home</a>
+      <div class="nav-projects">
+        <a href="#projects"><strong>作品 | Project</strong> <span class="arrow-down"></span></a>
+        <div class="dropdown">
+          <a href="index2.html">VIVID SYDNEY</a>
+          <a href="index3.html">MAP MIMA</a>
+          <a href="index4.html">光速咖啡</a>
+          <a href="index5.html">南阳光屿</a>
+          <a href="index6.html">LUCKY VITALITY</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div style="display: flex; align-items: center; gap: 20px; margin-top: -20px; margin-bottom: 40px;">
+        <h1 class="hero-title" style="margin: 0;">光速咖啡</h1>
+        <img src="images4/Frame (3).gif" alt="Coffee Animation" style="width: 60px; height: 60px;">
+      </div>
+      <p class="hero-description-cn">该项目是为杭州生物科技谷的咖啡店做品牌设计，包括LOGO设计，店招设计以及品牌物料衍生。杭州生物科技谷位于杭州市临空经济示范区内，围绕创新药、CDMO、“高轻新”型医疗器械、高端美妆用品，打造位列浙江省第一梯队兼具国内外影响力的生物医药产业集群。该咖啡品牌总体思路需要体现产业园区、科技感与咖啡的关联性。</p>
+      <p class="hero-description-en">This project involved branding for a coffee shop in Hangzhou Biotech Valley, including logo design, signage, and branding materials. Located within the Hangzhou Airport Economic Demonstration Zone, Hangzhou Biotech Valley is developing a leading biopharmaceutical industry cluster in Zhejiang Province, focusing on innovative pharmaceuticals, CDMOs, advanced medical devices, and high-end cosmetics, with both domestic and international influence. The overall design concept for the coffee shop needed to embody the connection between the industrial park, technology, and coffee.</p>
+    </div>
+  </div>
+</section>
+<main class="page-wrapper">
+  <section id="design-process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="cn-text">设计过程</span><span class="en-text"> | Design process</span>
+        </h2>
+      </div>
+      <hr class="section-divider">
+      <div class="gallery-grid-original">
+        <img src="images4/40a4a59262c5cf3c508504adfb923316214e003c.png" alt="Design process image 1">
+        <img src="images4/dc370b62bd57f70cccbf7233a554cc9e91254c51.png" alt="Design process image 2">
+        <img src="images4/b46ca6cdc7c1c894eb5acf71d9faf763e77a1336.png" alt="Design process image 3">
+        <img src="images4/1c7edcea9f9c1ec2164c44bf21d2389a2fe70dc1.png" alt="Design process image 4">
+        <img src="images4/25f8c4c9b749da621a24771d81e2f6e06d457a48.png" alt="Design process image 5">
+        <img src="images4/0f72f170cc19181beed5a83dc42df3efd3870187.png" alt="Design process image 6">
+      </div>
+    </div>
+  </section>
+</main>
+<section id="logo-vi">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="cn-text">视觉识别系统手册</span><span class="en-text"> | LOGO VI</span>
+      </h2>
+    </div>
+    <hr class="section-divider">
+    <div class="gallery-grid-original">
+      <img src="images4/852fbc0fa03234c7d929f4a225eb54506f7f359a.png" alt="LOGO VI image 1">
+      <img src="images4/8bdfef0a8f3dccdcdfb538fc8cd0c6a32cff9e1e.png" alt="LOGO VI image 2">
+      <img src="images4/615ecf11c32c4bc2d4155c4851542d136da7d87f.png" alt="LOGO VI image 3">
+      <img src="images4/79045d909d0313aa252c27e86bfa0c4d617c9c46.png" alt="LOGO VI image 4">
+      <img src="images4/531aed89bf0dcca4249a199a058a5959dda83779.png" alt="LOGO VI image 5">
+      <img src="images4/9dd1132495d4484a3ed8b916e7a3f81fe0d2deae.png" alt="LOGO VI image 6">
+    </div>
+  </div>
+</section>
+<section id="derived-materials">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="cn-text">物料衍生</span><span class="en-text"> | Derived Materials</span>
+      </h2>
+    </div>
+    <hr class="section-divider">
+    <div class="gallery-grid">
+      <div class="merged-image-container">
+        <img src="images4/eb409575df0c75331d61673e56229e871b866923.png" alt="Derived material" class="merged-img-1">
+        <img src="images4/985fba175b2bc203708ea28d21fbb91f2c240c44.png" alt="Derived material" class="merged-img-2" style="left: 173px;">
+      </div>
+      <div class="merged-image-container">
+        <img src="images4/9051bcd1fac40f96e9890a80465149e0c081b4ad.png" alt="Derived material" class="merged-img-3">
+        <img src="images4/d141adb990b332f2ee3f73c29ea47c3e30d374ca.png" alt="Derived material" class="merged-img-4" style="left: 180px;">
+      </div>
+      <img src="images4/c630fadfde3b57027bb5ced7dad7b4d70938fcdb.png" alt="Cold drink cup holder" style="height: 193px; width: 100%;">
+      <img src="images4/0dd5a4293df13987e7452c4515bcb29c92af0265.png" alt="Voucher front" style="height: auto;">
+      <img src="images4/4d301c95183d09607f2a056842d37d8a41624aa0.png" alt="Voucher back" style="height: auto;">
+      <div></div> <!-- 空白占位元素 -->
+      <img src="images4/3fcbaa404eb7d71238d9fd2b8819ab04fe2545af.png" alt="Poster in frame mockup">
+      <img src="images4/029c1f09f0e6f0d6a7c36a9fa66e3b59bf24a6cc.png" alt="Storefront mockup">
+      <img src="images4/a086d49d7e02d1a7cbe043626d1d548c9a00d098.png" alt="Signage mockup">
+    </div>
+  </div>
+</section>
+<section id="on-site-implementation">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="cn-text">落地实景展示</span><span class="en-text"> | On-Site Implementation Presentation</span>
+      </h2>
+    </div>
+    <hr class="section-divider">
+    <div class="on-site-layout">
+      <div class="on-site-left-col">
+        <img src="images4/293eeb2248cc4ac507ce3b75c6adf49a206d6470.png" alt="On-site implementation 1">
+        <img src="images4/9442e53af74892794e5687f72f933c440d8bc7f4.png" alt="On-site implementation 2">
+      </div>
+      <div class="on-site-right-col">
+        <img src="images4/a9187f21b5264aa59fe3985af2bcdea4724fc749.png" alt="On-site implementation 3">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 图片放大模态框 -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-container">
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+
+</body>
+</html>

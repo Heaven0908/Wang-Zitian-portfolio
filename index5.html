@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南阳光屿</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global5.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 65px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .arrow-down:hover {
+  transform: scale(1.1);
+}
+
+/* 下拉菜单样式 */
+.nav-projects {
+  position: relative;
+}
+
+.nav-projects .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-projects .dropdown a {
+  display: block !important;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  gap: 0 !important;
+}
+
+.nav-projects .dropdown a:hover {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+@media (max-width: 480px) {
+  .main-nav {
+    gap: 20px;
+  }
+  .main-nav a {
+    font-size: 16px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  padding-top: 58px;
+  padding-bottom: 56px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 87px;
+}
+
+.hero-logo {
+  flex: 0 0 346px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-top: 0;
+}
+
+.hero-text p {
+  margin: 0;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.hero-text .text-cn {
+  font-family: 'PingFang SC', 'Inter', sans-serif;
+  color: var(--text-color-primary);
+  margin-bottom: 49px;
+}
+
+.hero-text .text-en {
+  font-family: 'Helvetica', 'Inter', sans-serif;
+  color: var(--text-color-secondary);
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    gap: 40px;
+  }
+  .hero-logo {
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .hero-logo {
+    flex: 0 0 auto;
+    width: 250px;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+  .hero-text .text-cn {
+    margin-bottom: 30px;
+  }
+}
+
+/* CSS for section section:logo */
+.logo-section {
+  padding-bottom: 63px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px var(--gap-primary);
+  margin-top: 70px;
+}
+
+.logo-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-section {
+    padding-bottom: 40px;
+  }
+  .logo-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    gap: 20px;
+  }
+}
+
+/* CSS for section section:ip */
+.ip-section {
+  padding-bottom: 80px;
+}
+
+.ip-banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1120 / 628;
+  margin-top: 95px;
+  margin-bottom: 41px;
+}
+
+.ip-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ip-banner-buttons {
+  position: absolute;
+  top: calc(108 / 628 * 100%);
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.ip-button {
+  position: absolute;
+  top: 0;
+  width: calc(81 / 1120 * 100%);
+}
+
+.ip-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px var(--gap-primary);
+  align-items: start;
+}
+
+.ip-gallery-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-box {
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.03%);
+  border-radius: 30px;
+  padding: 20px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  margin-top: 12px;
+  height: 173px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: justify;
+  color: var(--text-color-secondary);
+}
+
+.info-box .info-text-cn {
+  font-family: 'PingFang SC', 'Inter', sans-serif;
+  margin-bottom: 11px;
+}
+
+.info-box .info-text-en {
+  font-family: 'Helvetica', 'Inter', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .ip-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .info-box {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ip-banner {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .ip-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .info-box {
+    margin-top: 0;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* 图片放大功能样式 */
+.logo-grid img, .ip-gallery-grid img, .hero-logo img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover, .ip-gallery-grid img:hover, .hero-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* 模态框样式 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+  <script src="global5.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navProjects = document.querySelector('.nav-projects');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (navProjects && dropdown) {
+        // 悬停效果
+        navProjects.addEventListener('mouseenter', function() {
+          dropdown.style.display = 'flex';
+        });
+        
+        navProjects.addEventListener('mouseleave', function() {
+          dropdown.style.display = 'none';
+        });
+        
+        // 保留点击效果作为备用
+        navProjects.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!navProjects.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+      
+      // 图片放大功能
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('caption');
+      const closeBtn = document.getElementsByClassName('close')[0];
+      
+      // 为所有图片添加点击事件
+      const allImages = document.querySelectorAll('.logo-grid img, .ip-gallery-grid img, .hero-logo img');
+      allImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+          modal.classList.add('show');
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        });
+      });
+      
+      // 点击关闭按钮关闭模态框
+      closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+      });
+      
+      // 点击模态框背景关闭模态框
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+      
+      // 按ESC键关闭模态框
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <nav class="main-nav">
+      <a href="index.html">主页 | Home</a>
+      <div class="nav-projects">
+        <a href="#projects"><strong>作品 | Project</strong> <span class="arrow-down"></span></a>
+        <div class="dropdown">
+          <a href="index2.html">VIVID SYDNEY</a>
+          <a href="index3.html">MAP MIMA</a>
+          <a href="index4.html">光速咖啡</a>
+          <a href="index5.html">南阳光屿</a>
+          <a href="index6.html">LUCKY VITALITY</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="images5/9e183cc2759ced527169a5abe1bec10529458800.png" alt="南阳光屿 Logo">
+      </div>
+      <div class="hero-text">
+        <p class="text-cn">该项目是为南阳光屿产业社区做品牌设计，包括Logo设计，IP形象设计以及其衍生物料。南阳光屿社区以 “阳光” 为纽带，以 “小岛” 为空间载体，打造艺术策展型社区场域。在这里，阳光与岛民的生活交织共振，激发充满想象的社区化学反应。</p>
+        <p class="text-en">This project involves branding for the Sun Island Industrial Community, including logo design, IP identity design, and related materials. Using "sunlight" as a connection and the "island" as a spatial medium, the Nanyangguang Island community creates an art-curated community space. Here, sunlight intertwines and resonates with the lives of islanders, sparking a vibrant and imaginative community chemistry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="logo" class="logo-section">
+  <div class="container">
+    <h2 class="section-title">LOGO设计方案 <span>| LOGO Design Scheme</span></h2>
+      <hr class="section-divider">
+    <div class="logo-grid">
+      <img src="images5/4ea82ef6cd6bf4c390d0aa1afb5428a74633aaea.png" alt="Logo Design 1">
+      <img src="images5/4151d18dcf7e7e997705064b4de9d86e63aee6d6.png" alt="Logo Design 2">
+      <img src="images5/c2cfa2e5e98574dff0d7fa5c57071bdd44bdd720.png" alt="Logo Design 3">
+      <img src="images5/290e19a3e1db431732a18bf9493cf1ec57f1af58.png" alt="Logo Design 4">
+      <img src="images5/88f54ae10766cff30902c91969d36b64a17594ec.png" alt="Logo Design 5">
+      <img src="images5/20e2d245e9c1909c3f0c4b689349d5b9a1c20dac.png" alt="Logo Design 6">
+      <img src="images5/625c89476ee7e3fd60b1bf080cb658511af7672e.png" alt="Logo Design 7">
+      <img src="images5/5e12b5b467fed9e79214a59670e54657b9e36e50.png" alt="Logo Design 8">
+      <img src="images5/a3100eded1f7ce9a6475604a85c26c5405f61b24.png" alt="Logo Design 9">
+      <img src="images5/2944be3e032321f6c9216269384ad26c42aee380.png" alt="Logo Design 10">
+      <img src="images5/92aafb549f742edd8d7d19e30b7287c55b211431.png" alt="Logo Design 11">
+      <img src="images5/2898b9e27f44ab83b166d024f7374325450d8b50.png" alt="Logo Design 12">
+    </div>
+  </div>
+</section>
+<section id="ip" class="ip-section">
+  <div class="container">
+    <h2 class="section-title">IP设计方案 <span>| IP Design Scheme</span></h2>
+      <hr class="section-divider">
+
+    <div class="ip-banner">
+      <img class="ip-banner-bg" src="images5/37d92797db0cc854cef06d1a2a1d05fbc5ba663e.png" alt="IP Design Banner with mascot on a beach">
+      <!--merged image-->
+      <div class="ip-banner-buttons">
+        <img src="images5/163_622.svg" alt="阳光 button" class="ip-button" style="left: 20px;">
+        <img src="images5/163_625.svg" alt="包容 button" class="ip-button" style="left: 135px;">
+        <img src="images5/163_626.svg" alt="活力 button" class="ip-button" style="left: 247px;">
+      </div>
+    </div>
+
+    <div class="ip-gallery-grid">
+      <img src="images5/9fdffe18eee6920735d36fd5281989b966cf7016.png" alt="IP Gallery Image 1">
+      <img src="images5/594287aaaaa34c6b0406c141318de56f4746e7e0.png" alt="IP Gallery Image 2">
+      <img src="images5/9bee947c4d51be7058a3c330b9e72077e0981d94.png" alt="IP Gallery Image 3">
+      <img src="images5/84cbde4b82d207ef0405b0c3a45183b40ab5cd39.png" alt="IP Gallery Image 4">
+      <img src="images5/cdaef0de10cdf88c5945b279c84949225f4155a2.png" alt="IP Gallery Image 5">
+      <div class="info-box">
+        <p class="info-text-cn">IP设计过程中我运用AIGC辅助设计，用IP三视图作为底图，生成配套的表情和插图等一系列衍生。</p>
+        <p class="info-text-en">During the IP design process, I used AIGC to assist in the design, using the IP three-view drawing as the base map to generate a series of derivatives including matching expressions and illustrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 图片放大模态框 -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-container">
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+
+</body>
+</html>
