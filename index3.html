@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAP MIMA Experience Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global3.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 65px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .arrow-down:hover {
+  transform: scale(1.1);
+}
+
+/* 下拉菜单样式 */
+.nav-projects {
+  position: relative;
+}
+
+.nav-projects .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-projects .dropdown a {
+  display: block !important;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  gap: 0 !important;
+}
+
+.nav-projects .dropdown a:hover {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+/* CSS for section section:hero */
+#section-hero {
+  padding-top: 99px;
+}
+.hero-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #555555 0%, #bbbbbb 118.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* 删除未知属性text-fill-color,使用-webkit-text-fill-color替代 */
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+.hero-title .title-large {
+  display: block;
+  font-size: 128px;
+  line-height: 1.1;
+}
+.hero-title .title-small {
+  display: block;
+  font-size: 96px;
+  line-height: 1.5;
+}
+.hero-images {
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+  margin-top: 134px;
+}
+.hero-img-1 { width: 511px; height: 277px; }
+.hero-img-2 { width: 513px; height: 277px; }
+
+.project-description {
+  margin-top: 44px;
+}
+.project-description p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 0;
+}
+.project-description .desc-zh {
+  font-family: var(--font-secondary);
+  color: var(--color-text-dark);
+  margin-bottom: 39px;
+}
+.project-description .desc-en {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1200px) {
+  .hero-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #section-hero { padding-top: 60px; }
+  .hero-title .title-large { font-size: 80px; }
+  .hero-title .title-small { font-size: 60px; }
+  .hero-images { margin-top: 60px; }
+  .hero-img-1, .hero-img-2 { width: 100%; height: auto; }
+  .project-description { margin-top: 30px; }
+  .project-description p { font-size: 16px; line-height: 26px; }
+}
+
+/* CSS for section section:design-process */
+#section-design-process {
+  padding-top: 66px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px 46px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* CSS for section section:prototype */
+.prototype-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.gallery-row {
+  display: flex;
+  gap: 21px;
+}
+.gallery-row img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.gallery-item {
+  flex: 1;
+  min-width: 0;
+}
+.gallery-item-large {
+  flex: 2;
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .gallery-row {
+    flex-direction: column;
+  }
+}
+
+/* CSS for section section:manual */
+#section-manual {
+  padding-bottom: 0;
+}
+.manual-images-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px; /* To give space at the end */
+}
+.manual-img-1 {
+  width: 1144px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.manual-img-2 {
+  width: 1405px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: -347px;
+}
+
+@media (max-width: 1440px) {
+  .manual-img-2 {
+    margin-top: -24vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .manual-img-2 {
+    margin-top: -15vw;
+  }
+}
+
+/* 图片放大功能样式 */
+.gallery-grid img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.prototype-gallery img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.prototype-gallery img:hover {
+  transform: scale(1.02);
+}
+
+.manual-images-container img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.manual-images-container img:hover {
+  transform: scale(1.02);
+}
+
+/* 模态框样式 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  </style>
+  <script src="global3.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navProjects = document.querySelector('.nav-projects');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (navProjects && dropdown) {
+        // 悬停效果
+        navProjects.addEventListener('mouseenter', function() {
+          dropdown.style.display = 'flex';
+        });
+        
+        navProjects.addEventListener('mouseleave', function() {
+          dropdown.style.display = 'none';
+        });
+        
+        // 保留点击效果作为备用
+        navProjects.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!navProjects.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+      
+      // 图片放大功能
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('caption');
+      const closeBtn = document.getElementsByClassName('close')[0];
+      
+      // 为所有图片添加点击事件
+      const allImages = document.querySelectorAll('.gallery-grid img, .prototype-gallery img, .manual-images-container img');
+      allImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+          modal.classList.add('show');
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        });
+      });
+      
+      // 点击关闭按钮关闭模态框
+      closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+      });
+      
+      // 点击模态框背景关闭模态框
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+      
+      // 按ESC键关闭模态框
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <nav class="main-nav">
+      <a href="index.html">主页 | Home</a>
+      <div class="nav-projects">
+        <a href="#projects"><strong>作品 | Project</strong> <span class="arrow-down"></span></a>
+        <div class="dropdown">
+          <a href="index2.html">VIVID SYDNEY</a>
+          <a href="index3.html">MAP MIMA</a>
+          <a href="index4.html">光速咖啡</a>
+          <a href="index5.html">南阳光屿</a>
+          <a href="index6.html">LUCKY VITALITY</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="section-hero">
+  <div class="container">
+    <h1 class="hero-title">
+      <span class="title-large">MAP MIMA</span>
+      <span class="title-small">Experience Design</span>
+    </h1>
+    <div class="hero-images">
+      <img src="images3/dd4c7b0596487d5b12d505a91ff33097bc22419f.png" alt="MAP MIMA building sketch" class="hero-img-1">
+      <img src="images3/1623a2a394de8a51d53a8b1cf3423d79cd53cba3.png" alt="MAP MIMA building photo" class="hero-img-2">
+    </div>
+    <div class="project-description">
+      <p class="desc-zh">该项目旨在为多功能数字艺术及表演空间MAP mima设计一个室内展览空间——“记忆之触”和一个低分辨率（LED）户外装置——“我们共享的余烬”。<br><br>“记忆之触”是一个深度沉浸式360度投影装置，灵感源自阿瓦巴卡尔之梦的《煤炭是如何炼成的》故事。这一体验将带领观众进入一个充满故事、声音和动感的神圣空间。旅程始于火山旁的黑暗之中，由发光的动画脚印引导，并被火、风和泥土的自然之声所包围。每个人都成为故事的一部分，将记忆和意义铭刻在这片土地鲜活的叙事中。<br><br>“我们共享的余烬”是一个照明装置，位于MAP mima的悬链线区域，其灵感源自阿瓦巴卡尔（Awabakal）的文化焚烧习俗。这种习俗不仅促进了生态平衡，更体现了记忆、社群和再生等深刻的精神意义。当参与者抓住嵌入在每个灯杆旁边的名为“余烬茎”（Ember Stems）的温度传感器时，他们的触碰会激活上方光线的变化，象征着火的集体力量，可以治愈、连接并带来新生——这体现了它在原住民文化和生态知识中的重要意义。</p>
+      <p class="desc-en">The project was to design an indoor exhibition space -- Touch of Memory and a low-resolution (LED) outdoor installation -- The Ember We Share for MAP mima, a multifunctional digital art and performance space.<br><br>Touch of Memory is a deeply immersive 360° projection installation inspired by the Awabakal Dreaming story of How Coal Was Made. The experience invites audiences into a sacred space of story, sound, and movement. The journey begins in darkness beside a volcano, guided by glowing, animated footprints and enveloped in the elemental sounds of fire, wind, and earth. Each person becomes part of the story, inscribing memory and meaning into the living narrative of this land.<br><br>The Ember We Share is a lighting installation situated in the catenary area of MAP mima, drawing inspiration from the Awabakal practice of cultural burning. This practice not only promotes ecological balance but also embodies deep spiritual meanings of memory, community, and regeneration. When participants grasp the temperature sensors called "Ember Stems" embedded next to each lighting pole, their touch activates a transformation of light above,  symbolizing the collective power of fire to heal, connect, and bring about renewal - mirroring its significance in First Nations cultural and ecological knowledge.</p>
+    </div>
+  </div>
+</section>
+<section id="section-design-process">
+  <div class="container">
+    <h2 class="section-heading">设计过程 <span class="en">| Design process</span></h2>
+    <hr class="section-divider">
+    <div class="gallery-grid">
+      <img src="images3/8b2968119afbe6464f1475f254f18a2827d807aa.png" alt="Design process image 1">
+      <img src="images3/967f84209c1225aa7fde4dcdef3323e8cf18f67f.png" alt="Design process image 2">
+      <img src="images3/995e794fc6b216ab2033b3811143d653bd322085.png" alt="Design process image 3">
+      <img src="images3/1c811541d0b48c6adb93360137ad8dcfa18a7dac.png" alt="Design process image 4">
+      <img src="images3/ac654412074973027e157e1ac636622ba6344273.png" alt="Design process image 5">
+      <img src="images3/becb58768fb89f03ec48126efceaf53ffa463540.png" alt="Design process image 6">
+      <img src="images3/c3bce4b965cd7c4d2fe1481b33d5f34ea035a065.png" alt="Design process image 7">
+      <img src="images3/8fec8156058e26893f0c11f08197972a785a76ab.png" alt="Design process image 8">
+      <img src="images3/9367a5ef71bf6354c3a63d1795b87ebfdd7acdb3.png" alt="Design process image 9">
+      <img src="images3/f1aaf61989a768f82f51f564c11014e73bb677c9.png" alt="Design process image 10">
+      <img src="images3/23b6245cc157de8aea18f59be84c73d92b32fe1e.png" alt="Design process image 11">
+      <img src="images3/786ec1a91572e777475b8b5edf56e1e4ed266c45.png" alt="Design process image 12">
+      <img src="images3/a0bc9af36876fdd80a7bea3e473355779cbc9426.png" alt="Design process image 13">
+      <img src="images3/9cc75e1eb3ffa7d514ee7312b502587bb5e60e3b.png" alt="Design process image 14">
+      <img src="images3/2662e222726ed313720a0b32e16f97a5897533ff.png" alt="Design process image 15">
+      <img src="images3/5a30825f36c1f66f02cd46008c37b03f9c60304f.png" alt="Design process image 16">
+      <img src="images3/a12828ee5b825591d429b4e6b1e6ef9182716367.png" alt="Design process image 17">
+    </div>
+  </div>
+</section>
+<section id="section-prototype">
+  <div class="container">
+    <h2 class="section-heading">低保真原型 <span class="en">| Low-fi prototype</span></h2>
+    <hr class="section-divider">
+    <div class="prototype-gallery">
+      <div class="gallery-row">
+        <img src="images3/21926c05e6f6c1ef0ca92ddc86e426fe063ebe47.png" alt="Low-fi prototype image 1" class="gallery-item">
+        <img src="images3/261cd8fbb3276d5c104060abde436a5a0166e638.png" alt="Low-fi prototype image 2" class="gallery-item">
+        <img src="images3/064eabbe4fc332d6808847ddb16e17e3b88cd1f5.png" alt="Low-fi prototype image 3" class="gallery-item-large">
+      </div>
+      <div class="gallery-row">
+        <img src="images3/f999d5bb281394c27abc8129a53736b4d6e28146.png" alt="Low-fi prototype image 4" class="gallery-item">
+        <img src="images3/a1ba21fe6cb0834fbb57acea37be2c7b31c1ea67.png" alt="Low-fi prototype image 5" class="gallery-item">
+        <img src="images3/10db6da242571a63abf7c97096ed3262c4002605.png" alt="Low-fi prototype image 6" class="gallery-item-large">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-manual">
+  <div class="container">
+    <h2 class="section-heading">手册 <span class="en">| Manual Sheet</span></h2>
+    <hr class="section-divider" style="margin-bottom: 84px;">
+  </div>
+  <div class="manual-images-container">
+    <img src="images3/bb07926f6eb9856d3f24d80f8cbadd39a349af53.png" alt="Manual sheet image 1" class="manual-img-1">
+    <img src="images3/cae32a7d1c75e67da77a83b5c168c7b1b0a62d14.png" alt="Manual sheet image 2" class="manual-img-2">
+  </div>
+</section>
+
+<!-- 图片放大模态框 -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-container">
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+
+</body>
+</html>

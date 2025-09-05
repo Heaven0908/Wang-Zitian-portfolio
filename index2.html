@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIVID SYDNEY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global2.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 65px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .arrow-down:hover {
+  transform: scale(1.1);
+}
+
+/* 下拉菜单样式 */
+.nav-projects {
+  position: relative;
+}
+
+.nav-projects .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-projects .dropdown a {
+  display: block !important;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  gap: 0 !important;
+}
+
+.nav-projects .dropdown a:hover {
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+/* CSS for section section:hero */
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-top: 100px;
+}
+
+.phone-mockup-container {
+  position: relative;
+  width: 293px;
+  height: 609px;
+  flex-shrink: 0;
+}
+
+.phone-frame-img {
+  position: absolute;
+  top: -16px;
+  left: -26px;
+  width: 325px;
+  height: 641px;
+  pointer-events: none;
+}
+
+.phone-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 34px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.phone-content {
+  position: relative;
+  z-index: 2;
+  padding: 12px 12px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.status-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.welcome-banner {
+  margin-top: 56px;
+  margin-left: 10px;
+}
+
+.welcome-text {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+.itinerary-promo {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  padding: 8px;
+  gap: 8px;
+}
+
+.promo-img {
+  width: 107px;
+  height: 114px;
+  object-fit: cover;
+  border-radius: 7px 0 0 7px;
+}
+
+.promo-text {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.promo-button {
+  display: inline-block;
+  background: linear-gradient(132deg, rgba(0, 175, 219, 0.7) 0%, rgba(255, 27, 162, 0.7) 138.35%);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.highlights-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 15px 0 5px 5px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.highlight-item {
+  background-color: white;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.highlight-item img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.highlight-item p {
+  font-size: 9.6px;
+  color: #272c2f;
+  padding: 5px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.phone-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #16134e;
+  padding: 8px 0 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: white;
+  font-size: 9.6px;
+  opacity: 0.7;
+}
+.footer-icon.active {
+  opacity: 1;
+}
+
+.footer-icon img {
+  height: 17px;
+}
+
+.hero-text-content {
+  flex-grow: 1;
+}
+
+.hero-title {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 105px;
+  text-align: right;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 48px 0;
+}
+
+.hero-description-cn, .hero-description-en {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.hero-description-cn {
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+.hero-description-en {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .hero-title {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .hero-description-cn, .hero-description-en {
+    text-align: left;
+  }
+}
+
+/* CSS for section section:design-process */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* 模态框样式 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS for section section:achievements */
+.achievement-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* CSS for section section:interactive */
+.interactive-display-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
+}
+
+.phone-mockup-container-large {
+  position: relative;
+  width: 343px;
+  height: 714px;
+}
+
+.phone-frame-img-large {
+  position: absolute;
+  top: -18px;
+  left: -19px;
+  width: 381px;
+  height: 751px;
+  pointer-events: none;
+}
+
+.phone-screen-large {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #100e31;
+  border-radius: 40px;
+  overflow: hidden;
+  background-image: url('images2/Frame 217.png');
+  background-size: cover;
+}
+
+.status-bar-large {
+  color: white;
+  font-size: 14px;
+  padding: 18px 30px;
+}
+
+.cursor-icon {
+  position: absolute;
+  width: 222px;
+  height: 222px;
+  top: 50%;
+  left: 50%;
+  transform: translate(35%, -25%) rotate(-20.92deg);
+  pointer-events: none;
+}
+
+.interactive-link-box {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  transform: translateX(50%);
+  padding: 10px 20px;
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.03%);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.interactive-link-box p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .interactive-display-container {
+    transform: scale(0.8);
+    min-height: 600px;
+  }
+  .cursor-icon {
+    display: none;
+  }
+  .interactive-link-box {
+    position: static;
+    margin-top: 20px;
+  }
+  .interactive-display-container {
+    flex-direction: column;
+  }
+}
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navProjects = document.querySelector('.nav-projects');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (navProjects && dropdown) {
+        // 悬停效果
+        navProjects.addEventListener('mouseenter', function() {
+          dropdown.style.display = 'flex';
+        });
+        
+        navProjects.addEventListener('mouseleave', function() {
+          dropdown.style.display = 'none';
+        });
+        
+        // 保留点击效果作为备用
+        navProjects.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!navProjects.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+      
+      // 图片放大功能
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const captionText = document.getElementById('caption');
+      const closeBtn = document.getElementsByClassName('close')[0];
+      
+      // 为所有gallery图片添加点击事件
+       const galleryImages = document.querySelectorAll('.gallery-item img');
+       galleryImages.forEach(function(img) {
+         img.addEventListener('click', function() {
+           modal.classList.add('show');
+           modalImg.src = this.src;
+           captionText.innerHTML = this.alt;
+         });
+       });
+       
+       // 点击关闭按钮关闭模态框
+       closeBtn.addEventListener('click', function() {
+         modal.classList.remove('show');
+       });
+       
+       // 点击模态框背景关闭模态框
+       modal.addEventListener('click', function(e) {
+         if (e.target === modal) {
+           modal.classList.remove('show');
+         }
+       });
+       
+       // 按ESC键关闭模态框
+       document.addEventListener('keydown', function(e) {
+         if (e.key === 'Escape' && modal.classList.contains('show')) {
+           modal.classList.remove('show');
+         }
+       });
+       
+       // 为整个interactive-display-container区域添加点击跳转功能
+       const interactiveContainer = document.querySelector('.interactive-display-container');
+       if (interactiveContainer) {
+         interactiveContainer.style.cursor = 'pointer';
+         interactiveContainer.addEventListener('click', function(e) {
+           // 如果点击的是已有的链接，不阻止默认行为
+           if (e.target.closest('.interactive-link-box')) {
+             return;
+           }
+           // 跳转到Figma原型
+           window.open('https://www.figma.com/proto/Ut4gEbjtgpfeixDp5o4I2A/Cyrus-Wang?page-id=0%3A1&node-id=0-18&viewport=1479%2C736%2C0.45&t=l6ton2ZW8NKOGWhe-1&scaling=min-zoom&content-scaling=fixed', '_blank');
+         });
+       }
+    });
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <nav class="main-nav">
+      <a href="index.html">主页 | Home</a>
+      <div class="nav-projects">
+        <a href="#projects"><strong>作品 | Project</strong> <span class="arrow-down"></span></a>
+        <div class="dropdown">
+          <a href="index2.html">VIVID SYDNEY</a>
+          <a href="index3.html">MAP MIMA</a>
+          <a href="index4.html">光速咖啡</a>
+          <a href="index5.html">南阳光屿</a>
+          <a href="index6.html">LUCKY VITALITY</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<section id="hero">
+  <div class="container hero-container">
+    <!--merged image-->
+    <div class="phone-mockup-container">
+      <div class="phone-screen">
+        <img src="images2/Frame 217.png" alt="Vivid Sydney App Interface" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+      </div>
+    </div>
+    <div class="hero-text-content">
+      <h1 class="hero-title">VIVID SYDNEY</h1>
+      <p class="hero-description-cn">这款移动应用程序旨在通过创新的数字解决方案提升缤纷悉尼灯光音乐节的体验。用户可以通过在应用程序中设置偏好来设计个性化行程。系统会创建一个初始计划，用户可以根据自身需求添加或删除活动进行优化。该应用程序还会在交互式地图上显示行程路线，提供直观的导航和清晰的视觉指南。</p>
+      <p class="hero-description-en">The mobile app aims to enhance the Vivid Sydney festival experience through innovative digital solutions. Users can design personalized itineraries by setting their preferences within the app. The system then creates an initial plan, which users can refine by adding or removing activities to suit their needs. The app also displays the itinerary route on an interactive map, offering straightforward navigation and a clear visual guide.</p>
+    </div>
+  </div>
+</section>
+<section id="design-process">
+  <div class="container">
+    <h2 class="section-title">设计过程 | Design process</h2>
+    <hr class="divider">
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images2/e509cfb0917181e6b7811212e59dfb15fb6f241f.png" alt="Design process image 1"></div>
+      <div class="gallery-item"><img src="images2/9fa34010e1ebc9a5aa7f000dad79955a49d01d25.png" alt="Design process image 2"></div>
+      <div class="gallery-item"><img src="images2/44753552ebcd55e53200174b861a9fd432b42cdb.png" alt="Design process image 3"></div>
+      <div class="gallery-item"><img src="images2/945fc12c2da03cd24a6f0e7e4b1c5a0aa1639651.png" alt="Design process image 4"></div>
+      <div class="gallery-item"><img src="images2/00ec245033ad58bf50b8b4508d7f9d57d193bd13.png" alt="Design process image 5"></div>
+      <div class="gallery-item"><img src="images2/8e1243fb1996f222f6b5c94806eb9c6cffeb916a.png" alt="Design process image 6"></div>
+      <div class="gallery-item"><img src="images2/2184f1abc0f1658c613b3868d27846358437eae0.png" alt="Design process image 7"></div>
+      <div class="gallery-item"><img src="images2/8c9734ccc6b3e5ee13a22a989e9bbb99d0982e09.png" alt="Design process image 8"></div>
+      <div class="gallery-item"><img src="images2/3014b10a234315e23e7b9834191d616b461f9fb9.png" alt="Design process image 9"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 图片放大模态框 -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-container">
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+
+<section id="achievements">
+  <div class="container">
+    <h2 class="section-title">成果展示 | Achievement Display</h2>
+    <hr class="divider">
+    <img src="images2/d3453135fd01cf30eaa228fbd9f1c68b73b903c5.png" alt="Achievement Display" class="achievement-img">
+  </div>
+</section>
+<section id="interactive">
+  <div class="container" >
+    <h2 class="section-title">交互展示 | Interactive Display</h2>
+    <hr class="divider">
+    <div class="interactive-display-container">
+      <!--merged image-->
+      <img src="images2/Frame 217.png" alt="Vivid Sydney App Interface" style="width: 100%; max-width: 300px; height: auto; margin-bottom: 20px; border-radius: 20px;">
+
+      <img src="images2/76_1395.svg" alt="Cursor icon" class="cursor-icon">
+      <a href="https://www.figma.com/proto/Ut4gEbjtgpfeixDp5o4I2A/Cyrus-Wang?page-id=0%3A1&node-id=0-18&viewport=1479%2C736%2C0.45&t=l6ton2ZW8NKOGWhe-1&scaling=min-zoom&content-scaling=fixed" class="interactive-link-box">
+        <p>点击此处体验App交互原型</p>
+      </a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
